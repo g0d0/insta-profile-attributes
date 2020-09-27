@@ -15,7 +15,7 @@ curl_setopt($ch, CURLOPT_URL, $url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 
 // $output contains the output string
-$output = json_decode(curl_exec($ch), true)['users'][0];
+$output = json_decode(curl_exec($ch), true);
 
 // close curl resource to free up system resources
 curl_close($ch);
